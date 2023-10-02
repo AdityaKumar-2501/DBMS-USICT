@@ -16,6 +16,8 @@ CREATE TABLE Courses (
     Courses_Name VARCHAR(70)
 );
 
+ALTER table Courses MODIFY column Courses_Name VARCHAR(200);
+
 CREATE TABLE Departments (
 	Department_ID VARCHAR(15) PRIMARY KEY,
     Course_ID VARCHAR(15),
@@ -41,6 +43,7 @@ CREATE TABLE Faculties(
     FOREIGN KEY Faculties(Department_ID) REFERENCES Departments(Department_ID)
 );
 
+ALTER TABLE Faculties ADD Subject_Teaches VARCHAR(20);
 
 DESC courses;
 DESC students;
