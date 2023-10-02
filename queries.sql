@@ -44,6 +44,7 @@ CREATE TABLE Faculties(
 );
 
 ALTER TABLE Faculties ADD Subject_Teaches VARCHAR(20);
+ALTER table Faculties MODIFY column Subject_Teaches VARCHAR(200);
 
 DESC courses;
 DESC students;
