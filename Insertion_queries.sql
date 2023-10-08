@@ -18,6 +18,18 @@ VALUES
 ('MBD09','MB14','Prof. Akash Dhiman','AL132'),
 ('BTEED73','EE73','Prof. Kavya Mehta','KP110');
 
+-- INSERT INTO Departments (Department_name)
+-- VALUES
+-- ("B.Tech Computer Science Department"),
+-- ("B.Tech Electronics Department"),
+-- ("MCA Department"),
+-- ("MBA Department"),
+-- ("M.Tech Department");
+
+UPDATE Departments     
+SET Department_name="M.Tech Department"
+WHERE Department_ID = "MTD73";
+
 SELECT * from Departments;
 
 INSERT INTO Faculties

@@ -24,6 +24,7 @@ CREATE TABLE Departments (
     HOD VARCHAR(30),
     HOD_ID VARCHAR(15)
 );
+ALTER TABLE Departments ADD Department_name VARCHAR(60);
 
 ALTER TABLE Departments ADD PRIMARY KEY (Department_ID);
 
