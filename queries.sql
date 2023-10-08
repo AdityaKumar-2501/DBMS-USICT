@@ -31,6 +31,7 @@ ALTER TABLE Departments ADD PRIMARY KEY (Department_ID);
 -- this is for making forign key after the creation of table
 ALTER TABLE Departments ADD FOREIGN KEY (HOD_ID) references Faculties(Faculty_ID);
 
+ALTER TABLE Departments ADD FOREIGN KEY (Course_ID) references Courses(Course_ID);
 CREATE TABLE Faculties(
 	Faculty_ID VARCHAR(15) PRIMARY KEY,
     Name VARCHAR(30),
