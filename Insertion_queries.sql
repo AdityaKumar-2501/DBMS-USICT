@@ -12,11 +12,13 @@ SELECT * from Courses;
 
 INSERT INTO Departments
 VALUES
-('CSD11','CS07','Prof. Hari Kumar','HK743'),
-('MTD73','MT34','Prof. Neelam Mehra','NP143'),
-('BTECD14','EC98','Prof. Ajay Vijay','AK711'),
-('MBD09','MB14','Prof. Akash Dhiman','AL132'),
-('BTEED73','EE73','Prof. Kavya Mehta','KP110');
+('CSD11','CS07',"MCA Department",'Prof. Hari Kumar','HK743'),
+('MTD73','MT34',"M.Tech Department",'Prof. Neelam Mehra','NP143'),
+('BTCSE14','CE98',"B.Tech Computer Science Department",'Prof. Ajay Vijay','AK711'),
+('MBD09','MB14',"MBA Department",'Prof. Akash Dhiman','AL132'),
+('BTED73','EE73',"B.Tech Electronics Department",'Prof. Kavya Mehta','KP110');
+
+
 
 -- INSERT INTO Departments (Department_name)
 -- VALUES
@@ -27,20 +29,24 @@ VALUES
 -- ("M.Tech Department");
 
 UPDATE Departments     
-SET Department_name="M.Tech Department"
-WHERE Department_ID = "MTD73";
+SET Department_name="B.Tech Computer Science Department"
+WHERE Department_ID = "BTCSE14";
 
 SELECT * from Departments;
 
 INSERT INTO Faculties
 VALUES
-('HK743', 'Prof. Hari Kumar','Professor','1983-10-29','M', 'Sector-2 L-148 Dwarka, New Delhi','harikumar@gmail.com', '9873171691','MTD73','Mathematics, Advanced Programming Principles, Embedded System'),
-('AL132', 'Prof. Akash Dhiman','Professor','1980-12-23','M', 'Sector-16 M-176 Dwarka, New Delhi','akashdhiman@gmail.com', '9736007321','MBD09','Corporate Finance, Bussiness Economics'),
-('NP143', 'Prof. Neelam Mehra','Assistant Professor','1986-07-11','F', 'Saket Villa No. 734, New Delhi','neelammehra@gmail.com', '9973175198','CSD11','DBMS, FOC'),
-('KP110', 'Prof. Kavya Mehta','Professor','1979-05-15','F', 'Sector-60 M-173 Noida, U.P','kavyamehta@gmail.com', '78171219813','BTECD14','DSA, OOPS, COA'),
-('AK711', 'Prof. Ajay Vijay','Assistant Professor','1985-01-07','M', 'Sector-15 House No. 171, Noida, U.P','ajayvjay@gmail.com', '7732146921','BTEED73','Applied Physics, Engineering Linear'),
-('RK171', 'Dr. Rahul Kashyap','Assistant Professor','1990-07-03','M', 'Sector-106 K-173, Noida, U.P','rahulkashyap@gmail.com', '7632116013','MBD09','Leadership and Entrepreneurship, Human Resources Managemnet'),
-('TH177', 'Dr. Tanya Jain','Assistant Professor','1991-11-04','F', 'Sector-110 L-132, Greater Noida, U.P','tanyajain@gmail.com', '9973117311','CSD11','SE,FOC,Netwroking');
+('HK743', 'Prof. Hari Kumar','Professor','1983-10-29','M', 'Sector-2 L-148 Dwarka, New Delhi','harikumar@gmail.com', '9873171691','MTD73','Mathematics, Advanced Programming Principles, Embedded System',200000),
+('AL132', 'Prof. Akash Dhiman','Professor','1980-12-23','M', 'Sector-16 M-176 Dwarka, New Delhi','akashdhiman@gmail.com', '9736007321','MBD09','Corporate Finance, Bussiness Economics',200000),
+('NP143', 'Prof. Neelam Mehra','Assistant Professor','1986-07-11','F', 'Saket Villa No. 734, New Delhi','neelammehra@gmail.com', '9973175198','CSD11','DBMS, FOC',230000),
+('KP110', 'Prof. Kavya Mehta','Professor','1979-05-15','F', 'Sector-60 M-173 Noida, U.P','kavyamehta@gmail.com', '78171219813','BTECD14','DSA, OOPS, COA',180000),
+('AK711', 'Prof. Ajay Vijay','Assistant Professor','1985-01-07','M', 'Sector-15 House No. 171, Noida, U.P','ajayvjay@gmail.com', '7732146921','BTEED73','Applied Physics, Engineering Linear',180000),
+('RK171', 'Dr. Rahul Kashyap','Assistant Professor','1990-07-03','M', 'Sector-106 K-173, Noida, U.P','rahulkashyap@gmail.com', '7632116013','MBD09','Leadership and Entrepreneurship, Human Resources Managemnet',100000),
+('TH177', 'Dr. Tanya Jain','Assistant Professor','1991-11-04','F', 'Sector-110 L-132, Greater Noida, U.P','tanyajain@gmail.com', '9973117311','CSD11','SE,FOC,Netwroking',100000);
+
+UPDATE faculties     
+SET salary= 200000
+WHERE Faculty_ID = "NP143";
 
 SELECT * from Faculties;
 
