@@ -36,10 +36,10 @@ SELECT * from Departments;
 
 INSERT INTO Faculties
 VALUES
-('HK743', 'Prof. Hari Kumar','Professor','1983-10-29','M', 'Sector-2 L-148 Dwarka, New Delhi','harikumar@gmail.com', '9873171691','MTD73','Mathematics, Advanced Programming Principles, Embedded System',200000),
+('HK743', 'Prof. Hari Kumar','Professor','1983-10-29','M', 'Sector-2 L-148 Dwarka, New Delhi','harikumar@gmail.com', '9873171691','MTD73','Mathematics, Advanced Programming Principles, Embedded System',230000),
 ('AL132', 'Prof. Akash Dhiman','Professor','1980-12-23','M', 'Sector-16 M-176 Dwarka, New Delhi','akashdhiman@gmail.com', '9736007321','MBD09','Corporate Finance, Bussiness Economics',200000),
-('NP143', 'Prof. Neelam Mehra','Assistant Professor','1986-07-11','F', 'Saket Villa No. 734, New Delhi','neelammehra@gmail.com', '9973175198','CSD11','DBMS, FOC',230000),
-('KP110', 'Prof. Kavya Mehta','Professor','1979-05-15','F', 'Sector-60 M-173 Noida, U.P','kavyamehta@gmail.com', '78171219813','BTECD14','DSA, OOPS, COA',180000),
+('NP143', 'Prof. Neelam Mehra','Assistant Professor','1986-07-11','F', 'Saket Villa No. 734, New Delhi','neelammehra@gmail.com', '9973175198','CSD11','DBMS, FOC',200000),
+('KP110', 'Prof. Kavya Mehta','Professor','1979-05-15','F', 'Sector-60 M-173 Noida, U.P','kavyamehta@gmail.com', '78171219813','BTECD14','DSA, OOPS, COA',200000),
 ('AK711', 'Prof. Ajay Vijay','Assistant Professor','1985-01-07','M', 'Sector-15 House No. 171, Noida, U.P','ajayvjay@gmail.com', '7732146921','BTEED73','Applied Physics, Engineering Linear',180000),
 ('RK171', 'Dr. Rahul Kashyap','Assistant Professor','1990-07-03','M', 'Sector-106 K-173, Noida, U.P','rahulkashyap@gmail.com', '7632116013','MBD09','Leadership and Entrepreneurship, Human Resources Managemnet',100000),
 ('TH177', 'Dr. Tanya Jain','Assistant Professor','1991-11-04','F', 'Sector-110 L-132, Greater Noida, U.P','tanyajain@gmail.com', '9973117311','CSD11','SE,FOC,Netwroking',100000);
